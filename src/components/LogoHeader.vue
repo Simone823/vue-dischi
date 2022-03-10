@@ -19,6 +19,7 @@ export default {
 .logo {
     width: 48px;
     height: 48px;
+    filter: drop-shadow(0 0 4px black);
 }
 
 </style>
