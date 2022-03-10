@@ -62,6 +62,7 @@ export default {
     row-gap: 20px;
     gap: 30px;
     padding: 0 20px;
+    overflow-y: auto;
 }
 
 </style>
