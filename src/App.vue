@@ -18,6 +18,13 @@ export default {
 // Scss impostazioni generali
 @import './assets/scss/common.scss';
 
+// Reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 #app {
   font-family: "Antic Slab", sans-serif;
   -webkit-font-smoothing: antialiased;
