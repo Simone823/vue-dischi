@@ -9,7 +9,7 @@
 
     <!-- Main parte centrale -->
     <main>
-
+      <DiscWrapper/>
     </main>
     
   </div>
@@ -20,11 +20,13 @@
 
 <script>
 import LogoHeader from "./components/Logo header.vue";
+import DiscWrapper from "./components/DiscWrapper.vue";
 
 export default {
   name: 'App',
   components: {
     LogoHeader,
+    DiscWrapper,
   }
 }
 </script>
@@ -46,12 +48,22 @@ export default {
   font-family: "Antic Slab", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 
   header {
     padding: 15px 20px;
     background-color: $color-blue-turquoise;
+  }
+
+  main {
+    background-color: $color-blue-turquoise-dark;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 </style>
