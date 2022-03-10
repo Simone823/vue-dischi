@@ -38,22 +38,30 @@ export default {
 @import "../assets/scss/common.scss";
 
 .disc_card {
-    width: calc(100% / 5);
+    width: calc(100% / 5 - 30px);
     height: 370px;
     background-color: $color-blue-turquoise;
     padding: 15px 0;
+    flex-grow: 1;
+    box-shadow: 0 0 8px black;
 
     .img_wrapper {
         width: 80%;
         margin: 0 auto;
         margin-bottom: 15px;
         box-shadow: 0 0 5px black;
+
+        img {
+            aspect-ratio: 1/1;
+        }
     }
 
     .info_wrapper {
         text-align: center;
         color: $color-white;
         letter-spacing: 1px;
+        width: 80%;
+        margin: 0 auto;
 
         .title {
             text-transform: uppercase;
