@@ -1,2 +1,17 @@
 // Font family Antic Slab
 @import "@fontsource/antic-slab/index.css";
+
+// Color white
+$color-white: white;
+
+// Color blue turquoise
+$color-blue-turquoise: #2e3a46;
+
+// Color blue turquoise dark
+$color-blue-turquoise-dark: #1e2d3b;
+
+// Reset img
+img {
+    max-width: 100%;
+    display: block;
+}
