@@ -39,7 +39,7 @@ export default {
 
 .disc_card {
     width: calc(100% / 5 - 30px);
-    height: 370px;
+    min-height: 370px;
     background-color: $color-blue-turquoise;
     padding: 15px 0;
     flex-grow: 1;
@@ -81,6 +81,18 @@ export default {
             font-size: 16px;
             text-shadow: 0 0 5px black;
         }
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .disc_card {
+        width: calc(100% / 2 - 30px);
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .disc_card {
+        width: calc(100% / 1 - 30px);
     }
 }
 
