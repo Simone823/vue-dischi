@@ -19,7 +19,7 @@
 
 
 <script>
-import LogoHeader from "./components/Logo header.vue";
+import LogoHeader from "./components/LogoHeader.vue";
 import DiscWrapper from "./components/DiscWrapper.vue";
 
 export default {
