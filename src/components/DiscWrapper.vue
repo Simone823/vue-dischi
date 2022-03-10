@@ -61,6 +61,7 @@ export default {
     flex-wrap: wrap;
     row-gap: 20px;
     gap: 30px;
+    padding: 0 20px;
 }
 
 </style>
