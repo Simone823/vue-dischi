@@ -6,9 +6,9 @@
         <!-- Select -->
         <select name="Select" id="select" v-model="valueSelect" @change="$emit('filtra', valueSelect)">
             <option value="" disabled selected hidden>Filtra per</option>
-            <option value="rock">Rock</option>
             <option value="metal">Metal</option>
             <option value="pop">Pop</option>
+            <option value="rock">Rock</option>
             <option value="jazz">jazz</option>
         </select>
 
