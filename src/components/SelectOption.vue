@@ -38,7 +38,9 @@ export default {
         // Reset valore select option
         resetValueSelect: function() {
             this.valueSelect = "";
-        },
+            console.log(this.valueSelect);
+            this.$emit('filtra', this.valueSelect);
+        },  
     }
 }
 </script>
