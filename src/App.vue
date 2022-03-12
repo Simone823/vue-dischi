@@ -63,7 +63,7 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 40px 0;
+    padding: 30px 0;
   }
 }
 </style>

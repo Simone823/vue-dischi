@@ -97,7 +97,7 @@ export default {
     flex-wrap: wrap;
     row-gap: 20px;
     gap: 30px;
-    padding: 0 20px;
+    padding: 5px 20px;
     overflow-y: auto;
 }
 
