@@ -50,7 +50,7 @@ export default {
 @import "../assets/scss/common.scss";
 
 .select_wrapper {
-    width: 100%;
+    flex-grow: 1;
     display: flex;
     justify-content: center;
     gap: 20px;
