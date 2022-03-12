@@ -4,9 +4,6 @@
     <!-- Wrapper disc -->
     <div class="disc_wrapper">
     
-        <!-- SelectOption -->
-        <SelectOption @filtra="recuperoValue"/>
-
         <DiscCard v-for="(element, index) in filterValue" :key="index"
             :poster="element.poster"
             :title="element.title"
@@ -25,13 +22,11 @@ import DiscCard from "./DiscCard.vue";
 
 // Axios
 import axios from 'axios';
-import SelectOption from './SelectOption.vue';
 
 export default {
     name: "DiscWrapper",
     components: {
         DiscCard,
-        SelectOption,
     },
 
     data() {
@@ -39,10 +34,12 @@ export default {
 
             // Array oggetti discCard
             arrayDisc: [],
-            
-            // Recupero valueSelect
-            valueRecuperato: "",
         }
+    },
+
+    props: {
+        // Recupero valueRecuperato da app
+        valueRecuperatoDaApp: String,
     },
 
     methods: {
@@ -55,24 +52,18 @@ export default {
                 this.arrayDisc = res.data.response;
             })
         },
-
-        // Recupero valueSelect
-        recuperoValue: function (valueSelect) {
-            this.valueRecuperato = valueSelect;
-            console.log(this.valueRecuperato);
-        },
     },
 
     computed: {
         // Filtra valueOption
         filterValue: function() {
-            if (this.valueRecuperato === "") {
+            if (this.valueRecuperatoDaApp == "") {
                 return this.arrayDisc;
             } 
 
             return this.arrayDisc.filter((element) => {
                 const { genre } = element;
-                return genre.toLowerCase().includes(this.valueRecuperato.toLowerCase());
+                return genre.toLowerCase().includes(this.valueRecuperatoDaApp.toLowerCase());
 
             })
 
